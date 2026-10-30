@@ -28,6 +28,19 @@ healthy, the VIP moves to the other node, so calls keep working without reconfig
 
 Configuration is **not synchronised** between the nodes (extensions, trunks and so on are yours to keep identical).
 
+## Screenshots
+**Status and CARP Maintenance** — live node state, the four health checks and the pfSense-style maintenance buttons:
+
+![Status and CARP Maintenance](docs/status.png)
+
+**Health checks** and thresholds:
+
+![Health checks](docs/health-checks.png)
+
+**Actions when the active node is unhealthy**, notifications and the scheduled switch-over:
+
+![Actions and schedule](docs/actions-schedule.png)
+
 ## Install (on every node)
 1. Download `ucarpha-<version>.tgz` and upload it in **Admin → Module Admin → Upload**, then install.
    The module is unsigned; if it is refused run `fwconsole setting SIGNATURECHECK 0` as root.
